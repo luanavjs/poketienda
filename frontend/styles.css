@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
 * {
     margin: 0px;
     padding: 0;
@@ -19,6 +21,15 @@ body {
     z-index: 1;
 }
 
+.menu a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro';
+    color: white;
+    font-size: 2rem;
+    padding: 10px 22px;
+    margin-bottom: 13px;
+}
+
 .logo {    
     padding: 0 20px;
     margin-top: 15px;
@@ -26,29 +37,19 @@ body {
 }
 
 
-.menuItems {
-    display: flex;
-    list-style-type: none;
+.buttonPay{
+    background-color: white;
+    border: none;
+    color: red;
+    padding: 10px 22px;
+    text-align: center;
     text-decoration: none;
-    padding: 1rem;
-    color: white;
-    text-transform: bold;
-    margin-right: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 3rem;
 }
 
-.menuItems li {
-    border-radius: 3px;
-    font-family: 'Roboto', sans-serif;
-    display: block;
-}
-
-
-.menuItems li:hover, li:active {
-    background-color: rgba(0,0,0,.3);
-    transition: .4s;
-}
-
-.productos {
+.page-content {
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -56,12 +57,17 @@ body {
 }
 
 .productContainer {
+    border-radius: 15px;
     margin: 15px;
     padding: 2px 16px;
     position: relative;
     background-color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
     font-family: 'Roboto';
+}
+
+.productContainer h3 {
+    text-align: center;
 }
 
 .productContainer img {
